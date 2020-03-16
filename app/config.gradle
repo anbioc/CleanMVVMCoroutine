@@ -1,0 +1,19 @@
+class AppConfig {
+    Properties appProperties
+}
+
+ext {
+    appConfig = new AppConfig()
+    appConfig.appProperties = new Properties()
+    appConfig.appProperties.load(
+            new FileInputStream(
+                    rootProject.file((rootDir.absolutePath + "/app/config/app.properties")))
+    )
+}
+
+
+android {
+    defaultConfig {
+        buildConfigField "String", "LOCATION", "\"$appConfig.appProperties.location\""
+    }
+}

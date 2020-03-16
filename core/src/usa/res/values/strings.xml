@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Career gates!</string>
+    <string name="please_try_again">Please Try Again</string>
+    <string name="generic_fail_title">Error</string>
+    <string name="generic_network_error">Network Failure</string>
+    <string name="generic_error_button_text">Try again</string>
+    <string name="no_jobs">No Jobs Available</string>
+    <string name="search_jobs">Search Jobs</string>
+    <string name="job_title">Job Title</string>
+    <string name="job_description">Job Description</string>
+    <string name="location">USA</string>
+    <string name="searchHints">Search Jobs in USA</string>
+
+</resources>

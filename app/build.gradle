@@ -1,0 +1,18 @@
+apply plugin: 'com.android.application'
+apply from: '../common_application.gradle'
+apply from: rootProject.file("app/config.gradle")
+
+android {
+
+
+
+}
+
+dependencies {
+
+    api project(":lib-theme")
+    implementation project(":feature-search")
+    implementation project(":feature-splash")
+    implementation project(":feature-detail")
+
+}

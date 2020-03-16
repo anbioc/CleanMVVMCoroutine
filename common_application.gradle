@@ -1,0 +1,48 @@
+apply plugin: 'com.android.application'
+apply from: '../common.gradle'
+
+
+android {
+    defaultConfig {
+        applicationId app.applicationId
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            applicationIdSuffix ".debug"
+            versionNameSuffix "-debug"
+        }
+    }
+
+    productFlavors {
+        eu {
+            applicationIdSuffix ".eu"
+            versionNameSuffix "-eu"
+        }
+
+        usa {
+            applicationIdSuffix ".usa"
+            versionNameSuffix "-usa"
+        }
+
+        play {
+            applicationIdSuffix ".play"
+            versionNameSuffix "-play"
+        }
+
+        demo {
+            applicationIdSuffix ".demo"
+            versionNameSuffix "-demo"
+        }
+    }
+}
+
+dependencies {
+    api project(":core")
+
+}

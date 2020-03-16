@@ -1,0 +1,92 @@
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply from: '../dependencies.gradle'
+apply from: '../shared_dependencies.gradle'
+apply from: '../shared_test_dependencies.gradle'
+apply from: '../sharedProperties.gradle'
+apply from: '../BuildConfigs.gradle'
+
+
+// Loading key store credentials file
+def keystorePropertiesFile = rootProject.file("keyStore.properties")
+def keystoreProperties = new Properties()
+keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+
+// Loading private app properties
+def appFile = rootProject.file("appProperties.properties")
+def appProperties = new Properties()
+appProperties.load(new FileInputStream(appFile))
+
+android {
+    compileSdkVersion app.compileSdkVersion
+    buildToolsVersion app.buildToolsVersion
+    defaultConfig {
+        minSdkVersion app.minSdkVersion
+        targetSdkVersion app.targetSdkVersion
+        versionCode app.applicationVersionCode
+        versionName app.applicationVersionName
+        javaCompileOptions.annotationProcessorOptions.includeCompileClasspath = true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    testOptions {
+        unitTests {
+            includeAndroidResources = true
+        }
+    }
+
+
+    compileOptions {
+        // Sets Java compatibility to Java 8
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+    flavorDimensions 'version', 'region'
+    productFlavors {
+        eu {
+            dimension 'region'
+        }
+
+        usa {
+            dimension 'region'
+        }
+
+        play {
+            dimension 'version'
+        }
+
+        demo {
+            dimension 'version'
+        }
+    }
+
+
+    signingConfigs {
+        release {
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+            storeFile file(keystoreProperties['storeFile'])
+            storePassword keystoreProperties['storePassword']
+        }
+    }
+
+    buildTypes {
+
+        release {
+        }
+
+        debug {
+
+        }
+    }
+}
+
+dependencies {
+
+}

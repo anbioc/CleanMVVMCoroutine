@@ -1,0 +1,7 @@
+
+ªkotlin:S100;"†Rename function "whenOnCreate thenViewIsCreatedAndVisible andThenViewModelCreated" to match the regular expression ^[a-z][a-zA-Z0-9]*$(¾ğİ«ûÿÿÿÿ8²¨–ì.
+®kotlin:S100A"ŠRename function "whenOnViewCreated thenRecyclerViewIsSetup andThenViewListenersIsSet " to match the regular expression ^[a-z][a-zA-Z0-9]*$(ôÃíàøÿÿÿÿ8²¨–ì.
+Åkotlin:S100G"¡Rename function "givenSuccessfulResult whenPostLiveData thenAdapterListIsFilled  andThenLoadingProgressHides" to match the regular expression ^[a-z][a-zA-Z0-9]*$(‚ˆ˜Óşÿÿÿÿ8²¨–ì.
+¸kotlin:S100O"™Rename function "givenFailureResult whenPostLiveData thenLoadingProgressHides andThenShowErrorScreen" to match the regular expression ^[a-z][a-zA-Z0-9]*$(Ø©« 8²¨–ì.
+Íkotlin:S100W"©Rename function "givenSuccessfulResult whenProcessResponseResult thenAdapterListIsFilled andThenLoadingProgressHides" to match the regular expression ^[a-z][a-zA-Z0-9]*$(ĞÂ›ëÿÿÿÿÿ8²¨–ì.
+²kotlin:S100_"Rename function "givenFailureResult whenProcessResponseResult andThenLoadingProgressHides" to match the regular expression ^[a-z][a-zA-Z0-9]*$(ÕäØÒøÿÿÿÿ8²¨–ì.

@@ -1,0 +1,36 @@
+apply plugin: 'com.android.library'
+apply from: '../common.gradle'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply from: '../dependencies.gradle'
+
+
+dependencies {
+//    api project(":lib-theme")
+    annotationProcessor autoValue.autoValue
+
+    implementation 'org.mockito:mockito-inline:3.0.0'
+    implementation 'org.mockito:mockito-inline:3.0.0'
+    implementation 'com.nhaarman.mockitokotlin2:mockito-kotlin:2.1.0'
+    implementation powerMock.powermockApiMockito2
+    implementation powerMock.powermockJunit4
+    implementation coroutine.coroutine
+    implementation coroutine.coroutine_test
+
+    implementation project(":lib-theme")
+
+    implementation (robolectricVersion.robolectric){
+        exclude group: "org.apache.maven.wagon"
+        exclude group: "org.apache.maven"
+        exclude group: "xmlpull"
+        exclude group: "xpp3"
+
+    }
+    implementation (roboelctricShadowVersion.shadowsPlayServices){
+        exclude group: "org.apache.maven.wagon"
+        exclude group: "org.apache.maven"
+        exclude group: "xmlpull"
+        exclude group: "xpp3"
+    }
+}

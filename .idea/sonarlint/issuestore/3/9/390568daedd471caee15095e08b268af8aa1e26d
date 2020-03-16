@@ -1,0 +1,34 @@
+
+N	java:S106d"9Replace this use of System.out or System.err by a logger.(”©Ÿ“
+i
+java:S4719v"NReplace "com.google.common.base.Charsets.UTF_8" with "StandardCharsets.UTF_8".(çâ€‹ÿÿÿÿÿ
+>
+java:S1148@"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+^
+java:S4042e"IUse "java.nio.Files#delete" here for better messages on error conditions.(¬Î¸A
+`	java:S112x"FDefine and throw a dedicated exception instead of using a generic one.(”øŠ¶øÿÿÿÿ
+S	java:S106]"9Replace this use of System.out or System.err by a logger.(—´§Ğúÿÿÿÿ
+N	java:S106~"9Replace this use of System.out or System.err by a logger.(…»²
+K
+java:S1874"4Remove this use of "closeQuietly"; it is deprecated.(Ÿõë¿
+Y
+java:S2147?"DCombine this catch with the one at line 61, which has the same body.(ÿÒ„p
+>
+java:S1148>"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+T	java:S106†"9Replace this use of System.out or System.err by a logger.(µÒòùÿÿÿÿ
+e
+java:S2095€"NUse try-with-resources or close this "RandomAccessFile" in a "finally" clause.(ÉÔ²È
+W
+java:S3985,"ARemove this unused private "FileLockingDependencyResolver" class.(î¦ù
+O	java:S106ƒ"9Replace this use of System.out or System.err by a logger.(ö–È
+Q	java:S110!"<This class has 6 parents which is greater than 5 authorized.(é‰ü¸
+?
+java:S1148›"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+S	java:S106a"9Replace this use of System.out or System.err by a logger.(­Ôùÿÿÿÿ
+P
+java:S1874v"5Remove this use of "readFirstLine"; it is deprecated.(çâ€‹ÿÿÿÿÿ
+˜
+java:S1186¤"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ôõ’ö
+P	java:S125("<This block of commented-out lines of code should be removed.(½©Í
+@
+java:S1068")Remove this unused "mFile" private field.(Ìğ•Å

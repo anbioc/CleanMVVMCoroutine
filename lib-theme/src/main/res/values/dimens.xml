@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="margin_xxxxxlarge">76dp</dimen>
+    <dimen name="margin_xxxxlarge">72dp</dimen>
+    <dimen name="margin_xxxlarge">48dp</dimen>
+    <dimen name="margin_xxlarge">44dp</dimen>
+    <dimen name="margin_xlarge">32dp</dimen>
+    <dimen name="margin_large">22dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="margin_intermediate">13dp</dimen>
+    <dimen name="margin_small">10dp</dimen>
+    <dimen name="margin_xsmall">8dp</dimen>
+    <dimen name="margin_xxsmall">6dp</dimen>
+    <dimen name="margin_xxxsmall">4dp</dimen>
+    <dimen name="margin_xxxxsmall">3dp</dimen>
+    <dimen name="margin_xxxxxsmall">2dp</dimen>
+    <dimen name="margin_none">0dp</dimen>
+
+    <dimen name="divider_default">1dp</dimen>
+    <dimen name="border_default">1dp</dimen>
+
+    <!--Default Text Sizes-->
+    <dimen name="text_nano">8sp</dimen>
+    <dimen name="text_micro">12sp</dimen>
+    <dimen name="text_small">14sp</dimen>
+    <dimen name="text_normal">16sp</dimen>
+    <dimen name="text_medium">18sp</dimen>
+    <dimen name="text_large">22sp</dimen>
+    <dimen name="text_xlarge">34sp</dimen>
+
+    <dimen name="default_elevation">5dp</dimen>
+    <dimen name="default_radius">3dp</dimen>
+    <dimen name="small_radius">1dp</dimen>
+    <dimen name="button_rounded_radius">20dp</dimen>
+    <dimen name="button_bg_radius">2dp</dimen>
+    <dimen name="button_oval_bg_radius">47dp</dimen>
+    <dimen name="edit_text_background_radius">4dp</dimen>
+    <dimen name="default_app_bar_height">340dp</dimen>
+    <dimen name="default_toolbar_view_height">64dp</dimen>
+    <dimen name="search_view_height">42dp</dimen>
+    <dimen name="toolbar_icon_height">42dp</dimen>
+    <dimen name="default_toolbar_separator_height">40dp</dimen>
+
+    <dimen name="product_list_image_size">104dp</dimen>
+    <dimen name="gallery_image_size">176dp</dimen>
+    <dimen name="product_image_size">80dp</dimen>
+    <dimen name="product_fulfilment_icon_size">40dp</dimen>
+    <dimen name="item_container_max_height">180dp</dimen>
+
+
+    <dimen name="loader_size">45dp</dimen>
+
+    <!--Primary Button Heights-->
+    <dimen name="default_button_height">40dp</dimen>
+    <dimen name="default_button_small_height">32dp</dimen>
+
+    <!--Primary Button Padding-->
+    <dimen name="default_button_padding">12dp</dimen>
+
+    <dimen name="large_button_height">52dp</dimen>
+    <dimen name="button_small_height">48dp</dimen>
+    <dimen name="large_button_width">188dp</dimen>
+
+
+    <dimen name="general_header_height">48dp</dimen>
+
+
+    <!--edit text-->
+    <dimen name="default_edittext_height">40dp</dimen>
+    <dimen name="default_edittext_padding">4dp</dimen>
+
+
+
+</resources>

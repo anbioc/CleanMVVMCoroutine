@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#7E57C2</color>
+    <color name="colorPrimaryDark">#AB47BC</color>
+    <color name="colorAccent">#EC407A</color>
+    <color name="primaryTextColor">#EF5350</color>
+    <color name="secondaryTextColor">#360A0A</color>
+    <color name="colorTextAccent">#EF5350</color>
+    <color name="colorPrimaryButton">#FF7043</color>
+    <color name="colorSecondaryButton">#9CCC65</color>
+    <color name="colorBackground">#F6F0F0</color>
+
+    <color name="colorRipple">#FFDADA</color>
+    <color name="colorButtonRipple">#FCECED</color>
+
+    <color name="error">#F44336</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#212121</color>
+
+
+    <color name="grey_1">#E9E8E8</color>
+    <color name="grey_2">#DBDBDB</color>
+    <color name="grey_3">#CCCBCB</color>
+    <color name="grey_4">#B9B8B8</color>
+    <color name="grey_5">#A3A2A2</color>
+    <color name="grey_6">#8B8B8B</color>
+    <color name="grey_7">#707070</color>
+    <color name="grey_8">#575656</color>
+    <color name="grey_9">#3C3C3C</color>
+
+    <color name="colorGold10">#FAE9B8</color>
+    <color name="colorGold20">#FFECB6</color>
+    <color name="colorGold30">#FAE4A1</color>
+    <color name="colorGold40">#FCDE94</color>
+    <color name="colorGold50">#FADC81</color>
+    <color name="colorGold60">#F8D56B</color>
+    <color name="colorGold70">#F8CC4B</color>
+    <color name="colorGold80">#FAC932</color>
+    <color name="colorGold90">#FAC81F</color>
+    <color name="colorGold100">#FFC000</color>
+
+    <color name="limestone">#d1cab8</color>
+    <color name="limestone_10">#faf9f7</color>
+
+</resources>

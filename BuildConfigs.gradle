@@ -1,0 +1,14 @@
+// Loading private app properties
+def appFile = rootProject.file("appProperties.properties")
+def appProperties = new Properties()
+appProperties.load(new FileInputStream(appFile))
+
+
+android {
+    defaultConfig {
+        buildConfigField("String", "APP_DATABASE", "${appProperties['appdatabse']}")
+        buildConfigField("String", "TABLE_NAME_JOB", "${appProperties['job_table']}")
+        buildConfigField("String", "BASE_URL", "${appProperties['base_url']}")
+
+    }
+}

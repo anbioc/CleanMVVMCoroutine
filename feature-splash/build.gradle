@@ -1,0 +1,6 @@
+apply from: '../common_feature.gradle'
+
+dependencies {
+    testImplementation project(":test-core")
+
+}

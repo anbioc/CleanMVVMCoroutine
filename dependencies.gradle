@@ -1,0 +1,121 @@
+
+ext.app = [
+        compileSdkVersion: 28,
+        buildToolsVersion: '28.0.3',
+        targetSdkVersion : 28,
+        minSdkVersion    : 21,
+        applicationId : 'com.aba.cleanmvvmcoroutine',
+        applicationVersionName : '1.0',
+        applicationVersionCode : 1
+]
+
+
+def auto_value = '1.7'
+ext.autoValue = [
+        autoValue : "com.google.auto.value:auto-value:$auto_value"
+]
+
+def kotlin_version = '1.3.50'
+ext.kotlin = [
+        kotlin : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+]
+def gradle_plugin_version = '3.5.1'
+
+def daggerVersion = '2.23.2'
+ext.dagger = [
+        'dagger' : "com.google.dagger:dagger:$daggerVersion",
+        'daggerAndroid' : "com.google.dagger:dagger-android:$daggerVersion",
+        'daggerAndroidSupport' : "com.google.dagger:dagger-android-support:$daggerVersion",
+        'daggerCompiler' : "com.google.dagger:dagger-compiler:$daggerVersion",
+        'daggerAndroidProcessor' : "com.google.dagger:dagger-android-processor:$daggerVersion"
+
+]
+
+def archCompomentVersion = '2.0.0'
+ext.arch = [
+        'lifecycleExtensions' : "androidx.lifecycle:lifecycle-extensions:$archCompomentVersion",
+        'coreTest' : "androidx.arch.core:core-testing:$archCompomentVersion"
+]
+
+def roomVersion = '2.2.2'
+def navigation_version = '1.0.0-rc02'
+def jUnitVersion = '4.12'
+def mockitoVersion = '2.13.0'
+
+def powermockVersion = '2.0.0-beta.5'
+ext.powerMock = [
+        'powermockApiMockito2' : "org.powermock:powermock-api-mockito2:$powermockVersion",
+        'powermockJunit4' : "org.powermock:powermock-module-junit4:$powermockVersion",
+]
+
+def assertjVersion = '3.14.0'
+ext.assertj = [
+        'asserjCore' :  "org.assertj:assertj-core:$assertjVersion"
+]
+
+def assertjAndroidVersion = '1.1.1'
+ext.assertjAndroid = [
+        'assertjAndroid' : "com.squareup.assertj:assertj-android:$assertjAndroidVersion"
+]
+
+def robolectricVersion = '4.2'
+ext.robolectricVersion = [
+        'robolectric': "org.robolectric:robolectric:$robolectricVersion"
+]
+
+def robolectricShadowsVersion = '3.3.2'
+ext.roboelctricShadowVersion = [
+        'shadowsPlayServices' : "org.robolectric:shadows-play-services:$robolectricShadowsVersion"
+]
+
+def mockKVersion = '1.8.5'
+ext.mockk = [
+        'mockk' : "io.mockk:mockk:$mockKVersion"
+]
+
+def navigational_component = '2.2.0-rc02'
+ext.navigation = [
+        'fragment' : "androidx.navigation:navigation-fragment:$navigational_component",
+        'ui' : "androidx.navigation:navigation-ui:$navigational_component",
+        'fragmentKtx' : "androidx.navigation:navigation-fragment-ktx:$navigational_component",
+        'uiKtx' : "androidx.navigation:navigation-ui-ktx:$navigational_component"
+]
+
+def chuck = '1.1.0'
+ext.chuck = [
+        'chuck' : "com.readystatesoftware.chuck:library:$chuck",
+        'chuckNoOp' : "com.readystatesoftware.chuck:library-no-op:$chuck"
+]
+
+def appComponent = '1.1.0'
+ext.appComponent = [
+        'appComponent' : "androidx.appcompat:appcompat:$appComponent"
+]
+
+def room = '2.2.1'
+ext.room = [
+        roomRuntime : "androidx.room:room-runtime:$room",
+        compiler : "androidx.room:room-compiler:$room",
+        rx2 : "androidx.room:room-rxjava2:$room",
+        common : "androidx.room:room-common:$room",
+        ktx : "androidx.room:room-ktx:$room"
+]
+
+def androidX = '1.0.0'
+ext.androidx = [
+        'recyclerview' : "androidx.recyclerview:recyclerview:$androidX",
+        'cardView' : "androidx.cardview:cardview:$androidX"
+]
+
+
+def picasso = "2.71828"
+ext.picasso = [
+        'picasso' : "com.squareup.picasso:picasso:$picasso"
+]
+
+def coroutine = "1.3.0"
+ext.coroutine = [
+        'coroutine' : "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutine",
+        'coroutine_test': "org.jetbrains.kotlinx:kotlinx-coroutines-test:$coroutine"
+
+]

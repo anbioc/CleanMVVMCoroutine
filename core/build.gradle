@@ -1,0 +1,7 @@
+apply from: '../common_lib.gradle'
+
+dependencies {
+    api project(":lib-theme")
+    testImplementation project(":test-core")
+
+}

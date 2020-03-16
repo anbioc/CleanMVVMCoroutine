@@ -1,0 +1,3 @@
+include ':app', ':core', ':test-core', ':lib-theme', ':feature-search', ':feature-splash'
+rootProject.name='CleanMVVMCoroutine'
+include ':feature-detail'

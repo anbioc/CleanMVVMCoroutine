@@ -1,0 +1,258 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorAccent</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="GlobalTheme" parent="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorAccent</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="GermanTheme" parent="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorAccent</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--Splash theme-->
+    <style name="AppTheme.launcherTheme">
+        <!--        <item name="android:windowBackground">@drawable/splash</item>-->
+    </style>
+
+    <!--Main Theme-->
+    <style name="MainTheme" parent="AppTheme">
+        <item name="android:colorEdgeEffect" tools:targetApi="lollipop">@color/grey_3</item>
+        <item name="android:textColorPrimary">@color/primaryTextColor</item>
+        <item name="android:textColorHint">@color/secondaryTextColor</item>
+    </style>
+
+
+    <!-- TextView has a bug when using android:textAllCaps="true" when the app theme includes
+    a android:fontFamily property. We're forced to add another style to include this property
+    to prevent library code that also implements this property from crashing our app -->
+    <style name="MainTheme.WithFont">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+    </style>
+
+    <!--Layout-->
+    <style name="MainTheme.WithFont.Container">
+        <item name="android:layout_marginTop">@dimen/margin_xsmall</item>
+        <item name="android:layout_marginBottom">@dimen/margin_xsmall</item>
+        <item name="android:layout_marginStart">@dimen/margin_xsmall</item>
+        <item name="android:layout_marginEnd">@dimen/margin_xsmall</item>
+        <item name="android:padding">@dimen/margin_xxxxxsmall</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="MainTheme.WithFont.Container.Default">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="MainTheme.WithFont.Container.Header">
+        <item name="android:layout_height">@dimen/general_header_height</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+    <style name="MainTheme.WithFont.Container.Item">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:padding">@dimen/margin_small</item>
+    </style>
+
+    <style name="MainTheme.WithFont.Container.Image">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:padding">@dimen/margin_small</item>
+        <item name="android:background">@color/colorGold30</item>
+    </style>
+
+    <style name="MainTheme.WithFont.separator">
+        <item name="android:background">@color/colorAccent</item>
+    </style>
+
+    <style name="MainTheme.WithFont.separator.vertical">
+        <item name="android:background">@color/colorAccent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/divider_default</item>
+    </style>
+
+    <style name="MainTheme.WithFont.separator.horizontal">
+        <item name="android:background">@color/colorAccent</item>
+        <item name="android:layout_width">@dimen/divider_default</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <!--Button-->
+    <style name="MainTheme.WithFont.BaseButton">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_small</item>
+        <item name="android:maxHeight">@dimen/default_button_height</item>
+        <item name="android:layout_marginTop">@dimen/margin_small</item>
+        <item name="android:layout_marginBottom">@dimen/margin_small</item>
+        <item name="android:layout_marginStart">@dimen/margin_small</item>
+        <item name="android:layout_marginEnd">@dimen/margin_small</item>
+        <item name="android:layout_height">@dimen/default_button_height</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:paddingStart">@dimen/default_button_padding</item>
+        <item name="android:paddingEnd">@dimen/default_button_padding</item>
+        <!--        <item name="android:stateListAnimator">@drawable/button_press_animator</item>-->
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+
+    <style name="MainTheme.WithFont.BaseButton.RoundedButton">
+        <!--        <item name="android:background">@drawable/rounded_button</item>-->
+        <item name="android:textColor">@color/primaryTextColor</item>
+    </style>
+
+    <style name="MainTheme.WithFont.BaseButton.PrimaryButton">
+        <!--        <item name="android:background">@drawable/primary_button</item>-->
+        <item name="android:textColor">@color/primaryTextColor</item>
+    </style>
+
+
+    <!--EditText-->
+
+    <style name="MainTheme.WithFont.BaseEditText">
+        <item name="android:maxHeight">@dimen/default_edittext_height</item>
+        <item name="android:layout_marginTop">@dimen/margin_small</item>
+        <item name="android:layout_marginBottom">@dimen/margin_small</item>
+        <item name="android:layout_marginStart">@dimen/margin_small</item>
+        <item name="android:layout_marginEnd">@dimen/margin_small</item>
+        <item name="android:layout_height">@dimen/default_edittext_height</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingStart">@dimen/default_edittext_padding</item>
+        <item name="android:paddingEnd">@dimen/default_edittext_padding</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="MainTheme.WithFont.BaseEditText.Default">
+        <item name="android:textColor">@color/primaryTextColor</item>
+<!--        <item name="android:background">@drawable/shape_transparent_grey_borded_bg</item>-->
+        <item name="android:textSize">@dimen/text_medium</item>
+        <item name="android:paddingTop">@dimen/margin_xxsmall</item>
+        <item name="android:paddingBottom">@dimen/margin_xxsmall</item>
+        <item name="android:textColorHint">@color/secondaryTextColor</item>
+    </style>
+
+    <!--text-->
+
+    <style name="MainTheme.WithFont.Text">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+    </style>
+
+    <style name="MainTheme.WithFont.Text.Header1">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textSize">@dimen/text_xlarge</item>
+    </style>
+
+    <style name="MainTheme.WithFont.Text.Header2">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textSize">@dimen/text_large</item>
+    </style>
+
+    <style name="MainTheme.WithFont.Text.Header3">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/secondaryTextColor</item>
+        <item name="android:textSize">@dimen/text_medium</item>
+    </style>
+
+    <style name="MainTheme.WithFont.Text.Header4">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textSize">@dimen/text_normal</item>
+    </style>
+
+    <style name="MainTheme.WithFont.Text.Header5">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textSize">@dimen/text_small</item>
+    </style>
+
+    <style name="MainTheme.WithFont.Text.Body1">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textSize">@dimen/text_medium</item>
+    </style>
+
+    <style name="MainTheme.WithFont.Text.Body2">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textSize">@dimen/text_normal</item>
+    </style>
+
+    <style name="MainTheme.WithFont.Text.Body3">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/secondaryTextColor</item>
+        <item name="android:textSize">@dimen/text_small</item>
+    </style>
+
+    <style name="MainTheme.WithFont.Text.Body4">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/secondaryTextColor</item>
+        <item name="android:textSize">@dimen/text_micro</item>
+    </style>
+
+    <style name="MainTheme.WithFont.Text.Body5">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/secondaryTextColor</item>
+        <item name="android:textSize">@dimen/text_nano</item>
+    </style>
+
+    <!--dialog-->
+    <style name="dialog_theme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/dialogAnimation</item>
+    </style>
+
+    <style name="dialogAnimation">
+<!--        <item name="android:windowEnterAnimation">@anim/bump</item>-->
+        <item name="android:windowExitAnimation">@android:anim/slide_out_right</item>
+    </style>
+
+    <style name="BBM__Theme.WithFont.CustomAlertDialog" parent="Base.Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:textColorSecondary">@color/secondaryTextColor</item>
+        <item name="textColorAlertDialogListItem">@color/colorPrimary</item>
+        <item name="android:fadeScrollbars">false</item>
+        <item name="listPreferredItemHeight">0dp</item>
+        <item name="listPreferredItemHeightSmall">0dp</item>
+        <item name="listPreferredItemHeightLarge">0dp</item>
+        <item name="listPreferredItemPaddingLeft">24dp</item>
+        <item name="listPreferredItemPaddingRight">24dp</item>
+        <item name="android:dividerHeight">8dp</item>
+
+    </style>
+
+
+    <!-- Test theme only -->
+    <style name="AppTheme.TEST">
+        <item name="themePrimaryBrandColor">@color/colorAccent</item>
+        <item name="themePrimaryBrandDarkColor">@color/colorAccent</item>
+        <item name="themeSecondaryBrandColor">@color/colorAccent</item>
+        <item name="themeSecondaryBrandDarkColor">#fff</item>
+        <item name="themeTertiaryBrandColor">@color/colorAccent</item>
+        <item name="themeTertiaryBrandDarkColor">@color/colorAccent</item>
+        <item name="themeAccentColor">@color/colorAccent</item>
+        <item name="themePrimaryTextColor">@color/colorAccent</item>
+        <item name="themeSecondaryTextColor">@color/colorAccent</item>
+
+    </style>
+
+
+</resources>

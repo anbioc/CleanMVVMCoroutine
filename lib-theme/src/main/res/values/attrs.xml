@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircularTextView">
+    <attr name="CircularFillColor" format="color"/>
+    </declare-styleable>
+    <attr name="themePrimaryBrandColor" format="reference|color" />
+    <attr name="themePrimaryBrandDarkColor" format="reference|color" />
+    <attr name="themeSecondaryBrandColor" format="reference|color" />
+    <attr name="themeSecondaryBrandDarkColor" format="reference|color" />
+    <attr name="themeTertiaryBrandColor" format="reference|color" />
+    <attr name="themeTertiaryBrandDarkColor" format="reference|color" />
+    <attr name="themeAccentColor" format="reference|color" />
+    <attr name="themePrimaryTextColor" format="reference|color" />
+    <attr name="themeSecondaryTextColor" format="reference|color" />
+
+
+
+<!--    <attr name="themePrimaryBrandColor" format="reference|color" />-->
+<!--    <attr name="themePrimaryBrandDarkColor" format="reference|color" />-->
+<!--    <attr name="themeSecondaryBrandColor" format="reference|color" />-->
+<!--    <attr name="themeSecondaryBrandDarkColor" format="reference|color" />-->
+<!--    <attr name="themeTertiaryBrandColor" format="reference|color" />-->
+<!--    <attr name="themeTertiaryBrandDarkColor" format="reference|color" />-->
+
+<!--    <attr name="brandLogo" format="reference" />-->
+
+<!--    <attr name="themeTextColorPrimary" format="reference|color" />-->
+<!--    <attr name="themeTextColorSecondary" format="reference|color" />-->
+
+<!--    <attr name="statusBarColor" format="reference|color" />-->
+<!--    <attr name="navBarColor" format="reference|color" />-->
+<!--    <attr name="navBarIconColor" format="reference|color" />-->
+<!--    <attr name="toolbarTitleColor" format="reference|color" />-->
+
+<!--    <attr name="tabBarColor" format="reference|color" />-->
+<!--    <attr name="bottomTabItemActive" format="reference|color" />-->
+<!--    <attr name="bottomTabItemInactive" format="reference|color" />-->
+<!--    <attr name="bottomTabBasketItemCountTextColor" format="reference|color" />-->
+
+<!--    <attr name="roundButtonCornerRadius" format="dimension" />-->
+<!--    <attr name="buttonCornerRadius" format="dimension" />-->
+<!--    <attr name="primaryButtonColor" format="reference|color" />-->
+<!--    <attr name="primaryButtonPressedColor" format="reference|color" />-->
+<!--    <attr name="primaryButtonRippleColor" format="reference|color" />-->
+<!--    <attr name="textButtonColor" format="reference|color" />-->
+<!--    <attr name="brandTypeColor" format="reference|color" />-->
+<!--    <attr name="brandIconColor" format="reference|color" />-->
+<!--    <attr name="reviewStarIconColor" format="reference|color" />-->
+
+<!--    <attr name="searchBoxBackgroundColor" format="reference|color" />-->
+<!--    <attr name="searchBoxTextColorHint" format="reference|color" />-->
+<!--    <attr name="searchBoxElevation" format="reference|dimension" />-->
+
+<!--    <attr name="homeButtonsBackground" format="reference|color" />>-->
+<!--    <attr name="homeButtonBackgroundColor" format="reference|color" />-->
+<!--    <attr name="homeButtonIconColor" format="reference|color" />-->
+
+<!--    <attr name="starRatingBarSelector" format="reference" />-->
+<!--    <attr name="starRatingEmpty" format="reference" />-->
+<!--    <attr name="starRatingHalf" format="reference" />-->
+<!--    <attr name="starRatingFull" format="reference" />-->
+
+<!--    <attr name="loyaltyCardLogo" format="reference" />-->
+<!--    <attr name="loyaltyCardBackground" format="reference" />-->
+<!--    <attr name="barcodeScannerViewsTextColor" format="reference" />-->
+
+</resources>
