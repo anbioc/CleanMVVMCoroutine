@@ -11,7 +11,7 @@ pipeline {
     stage('Test') {
       steps {
         sh './gradlew testDemoEuDebugUnitTest'
-        echo 'Lint check done!'
+        echo 'Tests done'
       }
     }
 
