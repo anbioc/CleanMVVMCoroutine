@@ -25,9 +25,9 @@ pipeline {
     stage('Buisld Time') {
       steps {
         sh './gradlew clean'
+        sh './gradlew assembleDebug'
         archiveArtifacts '**/*.apk'
         echo 'Build Finished'
-        sh './gradlew assembleDebug'
       }
     }
 
