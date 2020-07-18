@@ -1,14 +1,14 @@
 pipeline {
   agent any
   stages {
-    stage('Build') {
+    stage('Compile') {
       steps {
         sh './gradlew compileDebugSources'
         echo 'App Compiled'
       }
     }
 
-    stage('test') {
+    stage('Test') {
       steps {
         sh './gradlew testDemoEuDebugUnitTest'
         echo 'Lint check done!'
@@ -22,7 +22,7 @@ pipeline {
       }
     }
 
-    stage('Buisld Time') {
+    stage('Build Time') {
       steps {
         sh './gradlew clean'
         sh './gradlew assembleDebug'
