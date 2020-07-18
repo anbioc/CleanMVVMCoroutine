@@ -3,28 +3,28 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'gradlew compileDebugSources'
+        sh './gradlew compileDebugSources'
         echo 'App Compiled'
       }
     }
 
     stage('test') {
       steps {
-        sh 'gradlew lintDemoEuDebug'
+        sh './gradlew lintDemoEuDebug'
         echo 'tests done!'
       }
     }
 
     stage('Lint') {
       steps {
-        sh 'gradlew lintDemoEuDebug'
+        sh './gradlew lintDemoEuDebug'
         echo 'Lint Chacked.'
       }
     }
 
     stage('Build Time') {
       steps {
-        sh 'gradlew assembleRelease'
+        sh './gradlew assembleRelease'
         archiveArtifacts '**/*.apk'
         echo 'Build Finished'
       }
