@@ -18,6 +18,7 @@ import com.nhaarman.mockitokotlin2.verifyZeroInteractions
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.test.runBlockingTest
 import org.junit.After
 import org.junit.Before
 import org.junit.Test
@@ -76,7 +77,7 @@ class JobRepositoryImplTest {
 
     @Test
     fun `givenLocalDataSourceResultIsNotAvailable andGivenRemoteDataSourceResultIsAvailable whenGetJob thenRemoteDataIsUsed`() =
-        runBlocking {
+        runBlockingTest {
             givenLocalDataSourceResultIsNotAvailable()
             givenRemoteDataSourceResultIsAvailable()
             givenJobMapperMapOtherResponse()
@@ -87,7 +88,7 @@ class JobRepositoryImplTest {
 
     @Test
     fun `givenLocalDataSourceResultIsNotAvailable andGivenRemoteDataSourceResultIsFailure whenGetJob thenMapperIsNotCalled andThenResultIsFailure`() =
-        runBlocking {
+        runBlockingTest {
             givenLocalDataSourceResultIsNotAvailable()
             givenRemoteDataSourceResultIsFailure()
             whenGetJob(this)
@@ -151,7 +152,7 @@ class JobRepositoryImplTest {
     }
 
     private fun thenRemoteDataIsUsed() {
-        with((values[0] as ResultResponse.Success<List<JobDomainModel>>).data){
+        with((values[0] as ResultResponse.Success<List<JobDomainModel>>).data) {
             assertThat(size).isEqualTo(0)
         }
         with((values[1] as ResultResponse.Success<List<JobDomainModel>>).data) {
@@ -175,7 +176,7 @@ class JobRepositoryImplTest {
     }
 
     private fun thenResultIsFailure() {
-        with((values[0] as ResultResponse.Success<List<JobDomainModel>>).data){
+        with((values[0] as ResultResponse.Success<List<JobDomainModel>>).data) {
             assertThat(size).isEqualTo(0)
         }
         assertThat(values[1].isFailure()).isTrue()
