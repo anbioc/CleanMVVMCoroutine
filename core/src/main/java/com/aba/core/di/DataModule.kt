@@ -10,6 +10,7 @@ import com.aba.core.data.mapper.JobMapper
 import com.aba.core.data.net.JobsService
 import com.aba.core.data.repository.JobRepository
 import com.aba.core.data.repository.JobRepositoryImpl
+import com.aba.core.domain.usecase.JobUseCase
 import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton
@@ -23,7 +24,7 @@ class DataModule {
         @NonNull jobRemoteDataSource: JobRemoteDataSource,
         @NonNull jobLocalDataSource: JobLocalDataSource,
         @NonNull jobMapper: JobMapper
-    ): JobRepository = JobRepositoryImpl(
+    ): JobRepository<JobUseCase.JobSearchParams> = JobRepositoryImpl(
         jobRemoteDataSource,
         jobLocalDataSource,
         jobMapper

@@ -1,5 +1,6 @@
 package com.aba.core
 
+import com.aba.core.base.QueryStrategy
 import com.aba.core.data.model.JobItem
 import com.aba.core.domain.data.JobDomainModel
 import com.aba.core.domain.usecase.JobUseCase
@@ -105,6 +106,10 @@ val SOME_OTHER_JOB_RESPONSE_ITEMS_SAME_ID: MutableList<JobItem> =
     Collections.singletonList(SOME_OTHER_JOB_RESPONSE_WITH_SAME_ID)
 val SOME_OTHER_JOB_RESPONSE_ITEMS = listOf(SOME_OTHER_JOB_RESPONSE)
 
-val JOB_USE_CASE_PARAMS = JobUseCase.JobUseCaseParams(SOME_DESCRIPTION, SOME_LOCATION)
+val JOB_USE_CASE_PARAMS = JobUseCase.JobSearchParams(SOME_DESCRIPTION, SOME_LOCATION)
 
 const val SOME_MESSAGE = "SOME_MESSAGE"
+
+
+val JOB_SEARCH_PARAM = JobUseCase.JobSearchParams(SOME_DESCRIPTION, SOME_LOCATION)
+val SOME_OFFLINE_FIRST_STRATEGY = QueryStrategy.OfflineFirst

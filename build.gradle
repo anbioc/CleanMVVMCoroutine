@@ -25,6 +25,7 @@ allprojects {
         google()
         jcenter()
         maven { url "http://dl.bintray.com/twistedequations/maven" }
+        maven { url = 'https://repo.maven.apache.org/maven2'}
     }
 }
 

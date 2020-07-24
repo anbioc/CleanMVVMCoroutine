@@ -12,5 +12,5 @@ class UseCaseModule {
 
     @Provides
     @Singleton
-    fun provideJobUseCase(@NonNull jobRepository: JobRepository): JobUseCase = JobUseCase(jobRepository)
+    fun provideJobUseCase(@NonNull jobRepository: JobRepository<JobUseCase.JobSearchParams>): JobUseCase = JobUseCase(jobRepository)
 }
