@@ -91,7 +91,7 @@ class JobUseCaseTest {
             }
         }
 
-    private suspend fun thenResultIsFailure() {
+    private fun thenResultIsFailure() {
         assertThat((result as ResultResponse.Failure).isFailure()).isTrue()
     }
 
