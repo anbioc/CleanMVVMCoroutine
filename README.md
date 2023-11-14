@@ -1,5 +1,5 @@
 # CleanMVVMCoroutine
-A sample project showcasing Android multi-module MVVM Clean Architecture with the use of coroutines, dagger, retrofit, mockito, robolectric and developed based on the TDD process
+A sample project showcasing Android multi-module, MVVM, Clean Architecture, coroutines, dagger, retrofit, mockito, robolectric and developed based on the TDD process
 
 
 License
